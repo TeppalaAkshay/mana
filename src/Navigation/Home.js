@@ -1,15 +1,29 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import "../style.css";
 
-const Home = () =>{
-    return (
-    <div className="container">
-      <div className="page">
-        <h1>Welcome to Mana Groceries</h1>
-        <p>Your one-stop shop for all your grocery needs.</p>
-        <button className="btn-primary">Shop Now</button>
-      </div>
+const Home = () => {
+  const [api, setApi]=useState([]);
+
+  useEffect(() =>{
+    fetch('https://dummyjson.com/products')
+    .then(res => res.json())
+    .then(data => {setApi(data.products); 
+    })
+    
+}, []);
+    
+  return (
+    <div>
+      <ul>
+        {api.map(product => (
+          <li key={product.id}>
+            {product.title} - {product.description}
+          </li>
+        ))}
+      </ul>
     </div>
-    )
-}
+  );
+};
+
+  
 export default Home;
