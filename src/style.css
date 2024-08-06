@@ -108,7 +108,19 @@ body {
   .btn-primary:hover {
     background-color: #e14a4f;
   }
-  
+  .tiles{
+    width:20%;
+    height:50px;
+    padding: 100px;
+    box-shadow: #333;
+  }
+  .tile-image{
+    width: 50%;
+    height: 70px;
+    padding: 10px;
+    
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .header {
