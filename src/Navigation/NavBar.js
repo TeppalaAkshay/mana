@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import Products from "./Products";
 import Menu from "./Menu";
-import Cart from "./AddToCart";
+
 import About from "./About";
 import ContactUs from "./ContactUs";
 import '../Navigationstyles/Header.css';
@@ -17,15 +17,14 @@ const Head = () => {
         <h1 className="logo-text" onClick={() => navigate("/")}>Mana Groceries</h1>
       </div>
       <nav className="header-section nav">
-        <button className="nav-item" onClick={() => navigate("/")}>
+        <button className="nav-item" onClick={() => navigate("/products")}>
           <span className="nav-link">Products</span>
         </button>
         <button className="nav-item" onClick={() => navigate("/menu")}>
           <span className="nav-link">Menu</span>
         </button>
-        <button className="nav-item" onClick={() => navigate("/cart")}>
-          <span className="nav-link">Cart</span>
-        </button>
+       
+        
         <button className="nav-item" onClick={() => navigate("/about")}>
           <span className="nav-link">About</span>
         </button>
@@ -48,8 +47,9 @@ const Navbar = () => (
     <Head />
     <Routes>
       <Route path="/" element={<Products />} />
+      <Route path="/products" element={<Products />} />
       <Route path="/menu" element={<Menu />} />
-      <Route path="/cart" element={<Cart />} />
+     
       <Route path="/about" element={<About />} />
       <Route path="/contactus" element={<ContactUs />} />
     </Routes>

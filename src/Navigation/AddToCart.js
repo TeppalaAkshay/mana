@@ -7,13 +7,13 @@ const Cart = () =>{
     const {product}=location.state|| {};
     
     return(
-            <div>
+            <div className="tiles">
                 <h1>Products in cart</h1>
                 {product ? (
-                <div className="tile">
+                <div>
                     <h3>{product.title}</h3>
                     <img className="tile-image" src={product.images} />
-                    <p>Price: ${product.price}</p>
+                    <p>description: {product.description}</p>
                 </div>
                 ):(
                     <p>No products</p>
