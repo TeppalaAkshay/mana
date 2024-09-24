@@ -1,0 +1,25 @@
+.whole-grocery-page{
+    background-color: aqua;
+    
+}
+.item-list{
+    color: Black;
+    background-color: aquamarine;
+}
+
+.item-list button{
+    background-color: #ff7200 ;
+    border:none;
+    color: white;
+    margin-left:  20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+  }
+
+.flex-container div {
+    margin: 50px;
+}

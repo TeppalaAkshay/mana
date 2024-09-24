@@ -1,0 +1,229 @@
+{
+    "/groceries": {
+      "get": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Basmati Rice",
+            "type": "grains",
+            "description": "Premium long-grain basmati rice, fragrant and fluffy.",
+            "filename": "1.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 60.0,
+            "rating": 5
+          },
+          {
+            "id": 2,
+            "title": "Chickpeas (Chana)",
+            "type": "legumes",
+            "description": "Dried chickpeas, perfect for curries and salads.",
+            "filename": "2.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 40.0,
+            "rating": 4
+          },
+          {
+            "id": 3,
+            "title": "Turmeric Powder",
+            "type": "spices",
+            "description": "Organic turmeric powder, known for its vibrant color and health benefits.",
+            "filename": "3.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 25.0,
+            "rating": 5
+          },
+          {
+            "id": 4,
+            "title": "Cumin Seeds",
+            "type": "spices",
+            "description": "Whole cumin seeds, essential for Indian cooking.",
+            "filename": "4.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 30.0,
+            "rating": 4
+          },
+          {
+            "id": 5,
+            "title": "Garam Masala",
+            "type": "spices",
+            "description": "Aromatic garam masala blend for flavorful dishes.",
+            "filename": "5.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 45.0,
+            "rating": 5
+          },
+          {
+            "id": 6,
+            "title": "Mustard Oil",
+            "type": "oils",
+            "description": "Pure mustard oil, ideal for cooking and frying.",
+            "filename": "6.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 75.0,
+            "rating": 4
+          },
+          {
+            "id": 7,
+            "title": "Coconut Milk",
+            "type": "canned",
+            "description": "Rich and creamy coconut milk, perfect for curries.",
+            "filename": "7.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 55.0,
+            "rating": 5
+          },
+          {
+            "id": 8,
+            "title": "Paneer",
+            "type": "dairy",
+            "description": "Fresh Indian cottage cheese, great for grilling and curries.",
+            "filename": "8.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 80.0,
+            "rating": 5
+          },
+          {
+            "id": 9,
+            "title": "Lentils (Masoor)",
+            "type": "legumes",
+            "description": "Red lentils, a staple in Indian kitchens.",
+            "filename": "9.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 35.0,
+            "rating": 4
+          },
+          {
+            "id": 10,
+            "title": "Tamarind Paste",
+            "type": "condiments",
+            "description": "Tangy tamarind paste, essential for various chutneys.",
+            "filename": "10.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 50.0,
+            "rating": 4
+          },
+          {
+            "id": 11,
+            "title": "Rice Flour",
+            "type": "grains",
+            "description": "Finely ground rice flour, used for making dosas and more.",
+            "filename": "11.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 30.0,
+            "rating": 3
+          },
+          {
+            "id": 12,
+            "title": "Jaggery",
+            "type": "sweeteners",
+            "description": "Natural jaggery, a traditional sweetener made from sugarcane.",
+            "filename": "12.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 40.0,
+            "rating": 4
+          },
+          {
+            "id": 13,
+            "title": "Coriander Powder",
+            "type": "spices",
+            "description": "Ground coriander, adds flavor to various dishes.",
+            "filename": "13.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 25.0,
+            "rating": 4
+          },
+          {
+            "id": 14,
+            "title": "Red Chili Powder",
+            "type": "spices",
+            "description": "Spicy red chili powder, perfect for heat in your meals.",
+            "filename": "14.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 30.0,
+            "rating": 5
+          },
+          {
+            "id": 15,
+            "title": "Cardamom Pods",
+            "type": "spices",
+            "description": "Whole green cardamom pods for flavoring rice and desserts.",
+            "filename": "15.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 70.0,
+            "rating": 5
+          },
+          {
+            "id": 16,
+            "title": "Biryani Masala",
+            "type": "spices",
+            "description": "Special masala blend for making biryani.",
+            "filename": "16.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 60.0,
+            "rating": 4
+          },
+          {
+            "id": 17,
+            "title": "Sooji (Semolina)",
+            "type": "grains",
+            "description": "Coarse semolina, used in various Indian snacks.",
+            "filename": "17.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 30.0,
+            "rating": 3
+          },
+          {
+            "id": 18,
+            "title": "Fresh Curry Leaves",
+            "type": "herbs",
+            "description": "Fragrant fresh curry leaves, essential for South Indian dishes.",
+            "filename": "18.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 15.0,
+            "rating": 5
+          },
+          {
+            "id": 19,
+            "title": "Fenugreek Seeds",
+            "type": "spices",
+            "description": "Nutty fenugreek seeds, used in various Indian recipes.",
+            "filename": "19.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 20.0,
+            "rating": 4
+          },
+          {
+            "id": 20,
+            "title": "Puffed Rice",
+            "type": "snacks",
+            "description": "Light and crispy puffed rice, great for snacks and chaat.",
+            "filename": "20.jpg",
+            "height": 450,
+            "width": 300,
+            "price": 25.0,
+            "rating": 3
+          }
+        ]
+        
+      }
+    }
+  }

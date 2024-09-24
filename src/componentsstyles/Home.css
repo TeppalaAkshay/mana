@@ -1,0 +1,16 @@
+.Homebody{
+    height: 1000px;
+    width: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    
+}
+
+.logo{
+    color: white;
+    background-color: red;
+    padding: 5px;
+    height: auto;
+    display: inline-block;
+    
+}
