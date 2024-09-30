@@ -1,49 +1,40 @@
 import React, { useState, useEffect } from "react";
 import '../componentsstyles/GroceriesList.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem, removeItem } from '../store/actions';
+
 
 function GroceriesList() {
   const [groceries, setGroceries] = useState([]);
-  const [clickedItem, setClickedItem] = useState([]);
+ const dispatch = useDispatch();
+ const cartItem = useSelector(state=>state.cart);
 
-  // Fetch groceries data from API
+  
   useEffect(() => {
     fetch('http://localhost:8000/groceries')
       .then(response => {
      return response.json();
       })
       .then(result => {
-        setGroceries(result.data); // Accessing 'data' array from result
+        setGroceries(result.data);
       })
       .catch(error => console.error('Error fetching groceries data:', error));
   }, []);
 
   
   function handleButtonClick(item) {
-    setClickedItem(prevItems => {
-      const foundItem = prevItems.find(cartItem => cartItem.id === item.id);
-      if (foundItem) {
-        return prevItems.map(cartItem =>
-          cartItem.id === item.id
-            ? { ...cartItem, quantity: cartItem.quantity + 1 }
-            : cartItem
-        );
-      } else {
-        return [...prevItems, { id: item.id, title: item.title, quantity: 1 }];
-      }
-    });
+    dispatch(addItem(item));
   }
 
  
-  function handleRemoveItem(removeItemId) {
-    setClickedItem(prevItems =>
-      prevItems.filter(item => item.id !== removeItemId)
-    );
+  function handleRemoveItem(id) {
+   dispatch(removeItem(id));
   }
 
   return (
     <div className="flex-container">
       <h2>Groceries List</h2>
-      {groceries.length > 0 ? (
+      {groceries?.length > 0 ? (
         <div className="whole-grocery-page">
           <ul>
             {groceries.map((item) => (
@@ -62,9 +53,9 @@ function GroceriesList() {
 
       <div className="whole-grocery-page">
         <h2>Cart</h2>
-        {clickedItem.length > 0 ? (
+        {cartItem?.length > 0 ? (
           <ul>
-            {clickedItem.map((item, index) => (
+            {cartItem.map((item, index) => (
               <div className="item-list" key={index}>
                 {item.title} (Quantity: {item.quantity})
                 <button onClick={() => handleRemoveItem(item.id)}>
